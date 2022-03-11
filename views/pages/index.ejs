@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main>
+  <div class="jumbotron">
+
+    <h2>Ksiazki</h2>
+
+
+    <ul>
+        <% ksiazka.forEach(function(ksiazka) { %>
+          <li>
+            Nazwa Ksiązki:<strong><%= ksiazkaautor %></strong>
+            Autor Ksiązki:<strong><%= ksiazka.name%></strong>
+            <button value="x" id="usun">X</button>
+          </li>
+        <% }); %>
+      </ul>
+
+    <form action ="/msg/" method="post">
+    dodaj swoją książke  <input id="frontmessage" type="text" name="frontmessage" ></input>
+    dodaj autora książki  <input id="autor" type="text" name="frontmessage" ></input>
+    <input type="submit" value="ok"></input>
+    </form>
+  </div>
+</main> 
+
+<footer>
+  <%- include('../partials/footer'); %>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "firstjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "helloworld.js",
+  "scripts": {
+    "start": "node hellowolrd.js",
+    "dev": "nodemon hellowolrd.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  }
+}
